@@ -1,0 +1,266 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body, input, button {
+  font-family: 'Space Mono', monospace;
+}
+
+.wrapper {
+  background-color: #c5e4e7;
+  padding-top: 41px;
+  width: 375px;
+  margin: auto;
+  border-radius: 0 0 30px 30px;
+}
+
+.title {
+  margin: 0 144px 31px 144px;
+  color: #325557;
+  font-size: 24px;
+  letter-spacing: 10px;
+}
+
+.menu-wrapper {
+  background-color: #fff;
+  border-radius: 30px;
+  padding-bottom: 29px;
+}
+
+.menu {
+  padding: 33px 33px 31px 32px;
+  margin-bottom: 3px;
+}
+
+.bill__menu {
+  margin-bottom: 34px;
+}
+
+.title__form {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.form {
+  padding: 6px 15px 5px 16px;
+  border: 2px solid #f3f8fb;
+  border-radius: 5px;
+  width: 100%;
+  text-align: right;
+  font-size: 24px;
+  background-image: url(../images/icon-dollar.svg);
+  background-repeat: no-repeat;
+  background-position: left 7% bottom 43%;
+  background-color: #f3f8fb;
+  outline: none;
+  color: #094744;
+  transition: all 0.3s;
+  caret-color: transparent;
+
+}
+
+.form::-webkit-outer-spin-button,
+.form::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.form:focus {
+  border: 2px solid #58a59b;
+}
+
+.title__tip {
+  font-size: 16px;
+  margin-bottom: 17px;
+}
+
+.btn__tip {
+  display: grid;
+  grid-template-columns: repeat(2, 147px);
+  grid-template-rows: repeat(3, 47px);
+  gap: 17px;
+  margin-bottom: 33px;
+  justify-content: center;
+}
+
+.tip-btn {
+  font-size: 24px;
+  padding: 5px 50px 12px 49px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  background-color: #00474b;
+  transition: all 0.3s;
+  text-align: center;
+}
+
+.radio-btn {
+  display: none;
+}
+
+.radio-btn:checked + .tip-btn {
+  background-color: #26c2ad;
+  color: #00524d;
+}
+
+.form__custom {
+  background-image: none;
+}
+
+.form__people {
+  background-image: url(../images/icon-person.svg);
+  background-position: left 6% bottom 49%;
+}
+
+.result-section {
+  padding-left: 25px;
+  padding-right: 23px;
+}
+
+.result-box {
+  background-color: #00474b;
+  border-radius: 15px;
+  padding: 39px 22px 24px 24px;
+}
+
+.result__tip {
+  display: flex;
+  margin-bottom: 23px;
+  align-items: center;
+}
+
+.result-title {
+  flex: 1;
+  font-size: 13px;
+  color: #6ca1a5;
+}
+
+.result-title::first-line {
+  color: #fff;
+  font-size: 16px;
+}
+
+.result-value {
+  font-size: 31px;
+  color: #24c6af;
+}
+
+.result__total {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.reset-btn {
+  font-size: 20px;
+  padding: 10px 109px 8px 109px;
+  border-radius: 5px;
+  border: none;
+  background-color: #26c2ad;
+  color: #005353;
+}
+
+.reset-btn:disabled {
+  background-color: #0d686d;
+  pointer-events: none;
+}
+
+@media screen and (min-width: 376px) {
+  body {
+    background-color: #c5e4e7;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .wrapper {
+    width: 923px;
+    text-align: center;
+  }
+
+  .menu-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .title {
+    margin: 0 0 77px 9px;
+  }
+
+  .menu {
+    padding: 46px 34px 0px 49px;
+    text-align: left;
+  }
+
+  .bill__menu {
+    margin-bottom: 43px;
+  }
+
+  .form {
+    background-position: left 5% bottom 43%;
+    padding-right: 16px;
+  }
+
+  .form:hover {
+    transition: .1s;
+    border: 2px solid #58a59b;
+    cursor: pointer;
+  }
+
+  .btn__tip {
+    grid-template-columns: repeat(3, 117px);
+    grid-template-rows: repeat(2, 47px);
+    gap: 15px;
+    margin-bottom: 42px;
+  }
+
+  .tip-btn {
+    padding: 6px 36px 17px 35px;
+  }
+
+  .tip-btn:hover {
+    background-color: #a0e7df;
+    color: #004542;
+    transition: .1s;
+    cursor: pointer;
+  }
+
+  .form__custom {
+    padding-left: 7px;
+  }
+
+  .result-section {
+    padding: 33px 34px 0px 13px;
+  }
+
+  .result-box {
+    padding: 45px 41px 40px 40px;
+  }
+
+  .result__tip {
+    margin-bottom: 28px;
+  }
+
+  .result-title {
+    text-align: left;
+  }
+
+  .result__total {
+    margin-bottom: 123px;
+  }
+
+  .result-value {
+    font-size: 45px;
+  }
+
+  .reset-btn {
+    padding: 10px 135px 8px 135px;
+  }
+
+  .reset-btn:hover {
+    background-color: #9fe8df;
+    transition: .1s;
+    cursor: pointer;
+  }
+}

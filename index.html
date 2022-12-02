@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="css/styles.css">
+
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <h1 class="title">SPLI<br>TTER</h1>
+    <form class="menu-wrapper">
+      <section class="menu">
+        <div class="bill__menu">
+          <h2 class="title__form title__bill">Bill</h2>
+          <div class = form__bill>
+            <input class="form" name="bill" value="" placeholder="0" data-control="bill" onPaste="return false">
+          </div>
+        </div>
+        <div class="tip__menu">
+          <h2 class="title__tip">Select Tip %</h2>
+
+          <div class="btn__tip">
+            <input class="radio-btn" type="radio" id="5%" name="radio" value="5" data-control="radio">
+            <label class="tip-btn" for="5%">5%</label>
+
+            <input class="radio-btn" type="radio" id="10%" name="radio" value="10" data-control="radio">
+            <label class="tip-btn" for="10%">10%</label>
+
+            <input class="radio-btn" type="radio" id="15%" name="radio" value="15" data-control="radio">
+            <label class="tip-btn" for="15%">15%</label>
+
+            <input class="radio-btn" type="radio" id="25%" name="radio" value="25" data-control="radio">
+            <label class="tip-btn" for="25%">25%</label>
+
+            <input class="radio-btn" type="radio" id="50%" name="radio" value="50" data-control="radio">
+            <label class="tip-btn" for="50%">50%</label>
+
+            <input class="form form__custom" name="custom" value="" placeholder="Custom" data-control="custom-form" onPaste="return false">
+          </div>
+        </div>
+        <div class="people__menu">
+          <h2 class="title__form title__people">Number of People</h2>
+          <div class="number_of_people">
+            <input class="form form__people" name="people" value="" placeholder="0" data-control="people" onPaste="return false">
+          </div>
+        </div>
+      </section>
+      <section class="result-section">
+        <div class="result-box">
+          <div class="result__tip">
+            <h2 class="result-title result-tip">Tip Amount <br>/ person</h2>
+            <p class="result-value" data-result = "tipAmount">$0.00</p>
+          </div>
+          <div class="result__total">
+            <h2 class="result-title result-total">Total <br>/ person</h2>
+            <p class="result-value" data-result = "totalAmount">$0.00</p>
+          </div>
+          <button class="reset-btn" type="reset" name="Reset" data-control = "reset" disabled>RESET</button>
+        </div>
+      </section>
+  </div>
+</form>
+  </div>
+<script src="JS/index.js" charset="utf-8"></script>
+</body>
+
+</html>
